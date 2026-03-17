@@ -84,7 +84,7 @@
             <div class="container">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
-                    <p class="bio">Strategic Data Engineering Leader & Cloud/AI Solution Architect with 11+ years of experience driving enterprise data modernization, enabling AI adoption, and establishing robust data governance frameworks to ensure accuracy, quality, and business value. Expertise in building scalable and fault tolerant applications on MS Azure and Google Cloud Platforms. Proven ability to manage development and delivery of end user Products, build and lead teams of talented professionals to develop valuable solutions to meet business objectives.</p>
+                    <p class="bio">Strategic Data Engineering Leader & Cloud/AI Solution Architect with around 12 years of experience driving enterprise data modernization, enabling AI adoption, and establishing robust data governance frameworks to ensure accuracy, quality, and business value. Expertise in building scalable and fault tolerant applications on MS Azure and Google Cloud Platforms. Proven ability to manage development and delivery of end user Products, build and lead teams of talented professionals to develop valuable solutions to meet business objectives.</p>
                     <div class="about-details">
                         <p><strong>Location:</strong> Pune – MH, India</p>
                         <a href="#" class="btn btn-outline" download>Download Resume (PDF)</a>
@@ -193,12 +193,85 @@
 
         <!-- Contact Section -->
         <section class="section" id="contact">
-            <div class="container text-center">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="contact-intro">I'm currently looking for new opportunities in Data Engineering and Cloud Architecture. Whether you have a question or just want to connect, feel free to reach out!</p>
-                <div aria-live="polite" id="form-msg"></div>
-                <!-- Fallback to Mailto -->
-                <a href="mailto:apra451@gmail.com" class="btn btn-primary btn-large section-cta">Say Hello</a>
+            <div class="container">
+                <h2 class="section-title text-center" style="display:block; text-align:center;">Get In Touch</h2>
+                <p class="contact-intro">I'm currently looking for new opportunities in Data Engineering and Cloud Architecture. Whether you have a question, want to collaborate, or just want to connect — feel free to reach out!</p>
+
+                <div class="contact-layout">
+                    <!-- Left: Contact Info -->
+                    <div class="contact-info-card">
+                        <h3>Contact Details</h3>
+                        <ul class="contact-info-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                <span>Anand Prakash</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.07 3.38 2 2 0 0 1 3.07 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+                                <a href="tel:+919880971204">+91 9880971204</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <a href="mailto:apra451@gmail.com">apra451@gmail.com</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                <a href="https://www.linkedin.com/in/anand-prakash-16803b5a/" target="_blank" rel="noopener noreferrer">linkedin.com/in/anand-prakash</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                <a href="https://github.com/freakgeek0912" target="_blank" rel="noopener noreferrer">github.com/freakgeek0912</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-wrap">
+                        <div aria-live="polite" id="form-msg"></div>
+                        <!-- ACTION: Replace YOUR_FORM_ID with your actual Formspree form ID -->
+                        <!-- To get one: go to https://formspree.io/ → New Form → copy the form ID -->
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                            <!-- Formspree email config: set reply-to and notify email -->
+                            <input type="hidden" name="_replyto" value="apra451@gmail.com">
+                            <input type="hidden" name="_subject" value="New contact from your portfolio site!">
+
+                            <div class="form-group">
+                                <label for="contact-name">Your Name *</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number</label>
+                                <input type="tel" id="contact-phone" name="phone" placeholder="+91 98765 43210">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-purpose">Purpose *</label>
+                                <select id="contact-purpose" name="purpose" required>
+                                    <option value="" disabled selected>Select purpose...</option>
+                                    <option value="Job Opportunity">Job Opportunity</option>
+                                    <option value="Consulting">Consulting / Project</option>
+                                    <option value="Collaboration">Collaboration</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message *</label>
+                                <textarea id="contact-message" name="message" rows="4" required placeholder="Tell me more about your inquiry..."></textarea>
+                            </div>
+                            <div class="form-group callback-check">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="callback_requested" value="Yes, please call me back">
+                                    <span>&#128222; Want a callback? (I'll call you back on the phone number above)</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -207,14 +280,11 @@
         <div class="container footer-content">
             <p>&copy; 2024 Anand Prakash. Built with Vanilla HTML/CSS/JS.</p>
             <div class="social-links">
-                <a href="#" aria-label="GitHub">
+                <a href="https://github.com/freakgeek0912" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
-                <a href="#" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/anand-prakash-16803b5a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-                <a href="#" aria-label="Twitter">
-                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
                 </a>
             </div>
         </div>
