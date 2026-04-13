@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anand Prakash - Data Engineering Leader & Cloud Architect</title>
-    <meta name="description" content="Portfolio of Anand Prakash, a Strategic Data Engineering Leader & Cloud/AI Solution Architect with around 12 years of experience.">
+    <meta name="description"
+        content="Portfolio of Anand Prakash, a Strategic Data Engineering Leader & Cloud/AI Solution Architect with around 12 years of experience.">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Anand Prakash - Portfolio">
-    <meta property="og:description" content="Strategic Data Engineering Leader & Cloud/AI Solution Architect with around 12 years of experience.">
+    <meta property="og:description"
+        content="Strategic Data Engineering Leader & Cloud/AI Solution Architect with around 12 years of experience.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://freakgeek0912.github.io/Anand_Profile/">
 
@@ -22,13 +25,13 @@
 
     <!-- Theme Script (run early to prevent flash) -->
     <script>
-      (function(){
-        var saved = localStorage.getItem('theme');
-        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (saved === 'dark' || (!saved && prefersDark)) {
-          document.documentElement.classList.replace('light','dark');
-        }
-      })();
+        (function () {
+            var saved = localStorage.getItem('theme');
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (saved === 'dark' || (!saved && prefersDark)) {
+                document.documentElement.classList.replace('light', 'dark');
+            }
+        })();
     </script>
 
     <!-- JSON-LD Structured Data -->
@@ -46,452 +49,531 @@
     }
     </script>
 </head>
+
 <body>
 
-<!-- ===== HEADER ===== -->
-<header class="header">
-    <div class="container nav-container">
-        <a href="#" class="logo">AP.</a>
-        <nav role="navigation" aria-label="Main Navigation">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">AP.</a>
+            <nav role="navigation" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" width="20" height="20">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" width="20" height="20">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text fade-up">
+                    <h1>Hi, I'm<br><span class="accent-text">Anand Prakash</span></h1>
+                    <p class="headline">Strategic Data Engineering Leader &amp; Cloud/AI Solution Architect.</p>
+                    <div class="hero-badges">
+                        <span class="hero-badge">12 Yrs Experience</span>
+                        <span class="hero-badge">Google Cloud Architect</span>
+                        <span class="hero-badge">Azure Certified</span>
+                        <span class="hero-badge">GenAI SME</span>
+                    </div>
+                    <div class="hero-actions" style="margin-top: 1.75rem;">
+                        <a href="#experience" class="btn btn-primary">View Experience</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+
+                <div class="hero-graphic">
+                    <!-- Floating stat cards -->
+                    <div class="avatar-stat stat-top-left fade-up">
+                        <span class="stat-icon">🏆</span>
+                        <span>Fortune 5 Projects</span>
+                    </div>
+                    <div class="avatar-stat stat-bot-right fade-up">
+                        <span class="stat-icon">☁️</span>
+                        <span>Azure &amp; GCP Expert</span>
+                    </div>
+
+                    <!-- Spinning ring avatar -->
+                    <div class="avatar-ring">
+                        <div class="avatar-inner">
+                            <img src="assets/profile.jpg" alt="Anand Prakash — Data Engineering Leader"
+                                class="profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave separator -->
+        <div class="wave-sep">
+            <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,35 C360,70 1080,0 1440,35 L1440,70 L0,70 Z" fill="var(--bg-secondary)" />
             </svg>
-            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+        </div>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="section bg-alt" id="about">
+            <div class="container">
+                <h2 class="section-title fade-up">About Me</h2>
+                <div class="about-grid">
+                    <div class="fade-up">
+                        <p class="bio">Strategic Data Engineering Leader &amp; Cloud/AI Solution Architect with about <strong>12 years of experience</strong> driving enterprise data modernization, enabling AI adoption, and establishing robust data governance frameworks to ensure accuracy, quality, and business value. Possess expertise in building scalable and fault tolerant applications on MS Azure and Google cloud platforms. Proven ability to manage development and delivery of end user Products, build and lead teams of talented professionals to develop valuable solutions to meet business objectives.</p>
+                    </div>
+                    <div class="about-meta fade-up">
+                        <div class="about-meta-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Pune, MH — India</span>
+                        </div>
+                        <div class="about-meta-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                fill="none">
+                                <rect x="2" y="7" width="20" height="14" rx="2" />
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                            </svg>
+                            <span><strong>B.Tech</strong> — Information &amp; Technology, IIMT (2014)</span>
+                        </div>
+                        <div class="about-meta-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                fill="none">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            <span><strong>BFSI | Healthcare | Telecomm | Computer Hardwares | Hospitality and Travel | Retail</strong></span>
+                        </div>
+                        <div class="cert-badges">
+                            <span class="cert-badge">Google Cloud Architect</span>
+                            <span class="cert-badge">Azure Solution Architect</span>
+                        </div>
+                        <a href="assets/Anand_Prakash_Resume.pdf" class="btn btn-outline" download
+                            style="margin-top: 0.5rem; border-radius: 0.75rem;">⬇ Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave separator (reversed) -->
+        <div class="wave-sep">
+            <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,35 C360,0 1080,70 1440,35 L1440,0 L0,0 Z" fill="var(--bg-secondary)" />
             </svg>
-        </button>
-    </div>
-</header>
-
-<main>
-
-<!-- ===== HERO ===== -->
-<section class="hero" id="home">
-    <div class="container hero-content">
-        <div class="hero-text fade-up">
-            <h1>Hi, I'm<br><span class="accent-text">Anand Prakash</span></h1>
-            <p class="headline">Strategic Data Engineering Leader &amp; Cloud/AI Solution Architect.</p>
-            <div class="hero-badges">
-                <span class="hero-badge">12 Yrs Experience</span>
-                <span class="hero-badge">Google Cloud Architect</span>
-                <span class="hero-badge">Azure Certified</span>
-                <span class="hero-badge">GenAI SME</span>
-            </div>
-            <div class="hero-actions" style="margin-top: 1.75rem;">
-                <a href="#experience" class="btn btn-primary">View Experience</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
         </div>
 
-        <div class="hero-graphic">
-            <!-- Floating stat cards -->
-            <div class="avatar-stat stat-top-left fade-up">
-                <span class="stat-icon">🏆</span>
-                <span>Fortune 5 Projects</span>
-            </div>
-            <div class="avatar-stat stat-bot-right fade-up">
-                <span class="stat-icon">☁️</span>
-                <span>Azure &amp; GCP Expert</span>
-            </div>
+        <!-- ===== EXPERIENCE ===== -->
+        <section class="section" id="experience">
+            <div class="container">
+                <h2 class="section-title fade-up">Experience &amp; Work</h2>
+                <div class="experience-list">
 
-            <!-- Spinning ring avatar -->
-            <div class="avatar-ring">
-                <div class="avatar-inner">
-                    <img src="assets/profile.jpg" alt="Anand Prakash — Data Engineering Leader" class="profile-img">
+                    <article class="exp-card fade-up">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-title">Manager Data Engineering and Lead Cloud Solution Architect</div>
+                                <div class="exp-company">Publicis Sapient</div>
+                            </div>
+                            <span class="exp-period">Sep 2023 – Present</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Designed and delivered AI-powered scalable Martech applications for a Fortune 5 healthcare client, driving a 15% uplift in patient engagement and contributing to ~$120M+ incremental revenue through personalized campaigns.</li>
+                            <li>Built a marketing data platform integrating batch and real-time sources, enabling 600+ targeted campaigns spread across multiple LoBs annually and reducing campaign cycle time by 40%, which improved speed-to-market and boosted ROI by over ~18%.</li>
+                            <li>Developed AI-driven recommendation engines for healthcare marketing, increasing campaign accuracy by 60% and expanding patient outreach effectiveness, resulting in a 30% rise in conversion rates.</li>
+                            <li>Championed cloud migration initiatives, optimizing resource utilization and reducing infrastructure costs by 35%, achieving $10M+ annual savings while improving system performance and scalability.</li>
+                            <li>Provided technical leadership in architecture reviews, ensuring scalability, governance, and compliance with healthcare data standards, which reduced audit findings by 40% and improved system reliability KPIs.</li>
+                            <li>Led team expansion from 25 to 60+ engineers across geographies to accelerate delivery of critical milestones; established agile delivery frameworks and mentorship programs that improved productivity by 20% and ensured on-time completion of multi-million-dollar initiatives</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Azure Databricks</span>
+                            <span class="tag">DBX Agentbricks</span>
+                            <span class="tag">GenAI</span>
+                            <span class="tag">GCP</span>
+                            <span class="tag">PySpark</span>
+                        </div>
+                    </article>
+
+                    <article class="exp-card fade-up">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-title">Manager Data Engineering</div>
+                                <div class="exp-company">Accenture Strategy &amp; Consulting</div>
+                            </div>
+                            <span class="exp-period">Jun 2019 – Sep 2023</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Being part of Strategy and Consulting in Accenture Applied intelligence team, gathered hands-on experience in managing development and delivery of E2E technology products and applications using Big Data Tool stack, Azure Cloud Services and GCP.</li>
+                            <li>Delivered multiple data engineering &amp; Analytics projects across functions, data modernization, cloud data migration and transformation, building scalable cloud solution designs, pre-sales architecture &amp; RFP activities thus helping and enabling enterprises realize revenue growth.</li>
+                            <li>Responsible for managing teams from offshore for various clients, stakeholder communications and agile SDLC activities.</li>
+                            <li>Experienced dealing with high scale &amp; volume of data transformation and processing keeping data quality, data governance, data security and other agile based parameters in view.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Big Data</span>
+                            <span class="tag">Azure Cloud Services</span>
+                            <span class="tag">GCP</span>
+                        </div>
+                    </article>
+
+                    <article class="exp-card fade-up">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-title">Senior Software Engineer</div>
+                                <div class="exp-company">Zebra Technologies</div>
+                            </div>
+                            <span class="exp-period">Jul 2018 – May 2019</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Designed and developed ETL workflow for data migration requirement from AWS S3 buckets to On-Prem Cassandra server after transformation.</li>
+                            <li>Developed multiple Kafka Stream jobs for Near real time data ingestion and processing.</li>
+                            <li>Developed multiple Spark application based on stakeholders' needs for data transformation and reporting needs.</li>
+                            <li>Delivered on cloud migration journey of data pipelines and workflows from OnPrem to GCP.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">ETL</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">Spark</span>
+                            <span class="tag">GCP</span>
+                        </div>
+                    </article>
+
+                    <article class="exp-card fade-up">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-title">Lead Consultant</div>
+                                <div class="exp-company">ITC Infotech</div>
+                            </div>
+                            <span class="exp-period">Jan 2018 – Jun 2018</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>For a Global Banking Major - Provided solution to ease work for monitoring and support teams.</li>
+                            <li>Optimized existing Spark Scala code by applying Industry standard coding practices.</li>
+                            <li>Created data model and generated control flow diagram for the application.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Spark Scala</span>
+                            <span class="tag">Data Modeling</span>
+                        </div>
+                    </article>
+
+                    <article class="exp-card fade-up">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-title">Senior Software Engineer</div>
+                                <div class="exp-company">Cerner Healthcare (An Oracle company)</div>
+                            </div>
+                            <span class="exp-period">Feb 2017 – Dec 2017</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Now acquired by Oracle, Cerner Healthcare solutions is a leader in its segment as healthcare service provider.</li>
+                            <li>Migrated 6+ PB of Data from on-prem systems to Azure and then delivered multiple reporting requirements through Tableau.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Azure</span>
+                            <span class="tag">Tableau</span>
+                        </div>
+                    </article>
+
+                    <article class="exp-card fade-up">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-title">Hadoop Developer</div>
+                                <div class="exp-company">Birlasoft India Pvt Ltd</div>
+                            </div>
+                            <span class="exp-period">Jun 2014 – Jan 2017</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Migrated humongous relational data from SAP table to HDFS.</li>
+                            <li>Created Hive tables for storing imported data using Partitioning and automated multiple jobs.</li>
+                            <li>Developed HIVE SCRIPTS to fetch data from Central repository using Sqoop and wrote a Shell Script for automating this job.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">HDFS</span>
+                            <span class="tag">Hive</span>
+                            <span class="tag">Sqoop</span>
+                            <span class="tag">Shell Script</span>
+                        </div>
+                    </article>
+
                 </div>
+            </div>
+        </section>
+
+        <!-- Wave separator -->
+        <div class="wave-sep">
+            <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,35 C360,70 1080,0 1440,35 L1440,70 L0,70 Z" fill="var(--bg-secondary)" />
+            </svg>
+        </div>
+
+        <!-- ===== SKILLS ===== -->
+        <section class="section bg-alt" id="skills">
+            <div class="container">
+                <h2 class="section-title fade-up">Skills &amp; Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category fade-up">
+                        <h3>☁️ Cloud Platforms</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Azure Databricks</span>
+                            <span class="skill-pill">Azure Data Factory</span>
+                            <span class="skill-pill">Azure Active Directory</span>
+                            <span class="skill-pill">DBX Unity Catalog</span>
+                            <span class="skill-pill">Azure Key Vault</span>
+                            <span class="skill-pill">Azure SQL</span>
+                            <span class="skill-pill">DBX Agentbricks</span>
+                            <span class="skill-pill">GC Data Proc</span>
+                            <span class="skill-pill">GC Pub Sub</span>
+                            <span class="skill-pill">GC Composer</span>
+                            <span class="skill-pill">GC SQL</span>
+                            <span class="skill-pill">GC Spanner</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-up">
+                        <h3>📦 Big Data Stack &amp; Languages</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">HDFS</span>
+                            <span class="skill-pill">Kafka</span>
+                            <span class="skill-pill">Hive</span>
+                            <span class="skill-pill">Cassandra</span>
+                            <span class="skill-pill">PySpark</span>
+                            <span class="skill-pill">Scala</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-up">
+                        <h3>🤖 AI Tools</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">M365 Copilot</span>
+                            <span class="skill-pill">Replit</span>
+                            <span class="skill-pill">Claude</span>
+                            <span class="skill-pill">Gemini</span>
+                            <span class="skill-pill">AI Frameworks</span>
+                            <span class="skill-pill">Prompt Engineering</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-up">
+                        <h3>🔧 Version Control &amp; CI/CD</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">GitLab</span>
+                            <span class="skill-pill">Bitbucket</span>
+                            <span class="skill-pill">Azure DevOps Board</span>
+                            <span class="skill-pill">GitActions</span>
+                            <span class="skill-pill">Jenkins</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-up">
+                        <h3>📊 Visualization</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Tableau</span>
+                            <span class="skill-pill">Power BI</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-up">
+                        <h3>🏗️ Domain Experience</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Data Modernization</span>
+                            <span class="skill-pill">Data Governance</span>
+                            <span class="skill-pill">Gen AI Tooling SME</span>
+                            <span class="skill-pill">Data Quality</span>
+                            <span class="skill-pill">Cloud Migration</span>
+                            <span class="skill-pill">ETL Specialist</span>
+                            <span class="skill-pill">Solution Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wave separator (reversed) -->
+        <div class="wave-sep">
+            <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,35 C360,0 1080,70 1440,35 L1440,0 L0,0 Z" fill="var(--bg-secondary)" />
+            </svg>
+        </div>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title text-center fade-up" style="display:block; text-align:center;">Get In Touch
+                </h2>
+                <p class="contact-intro fade-up">I'm currently looking for new opportunities in Data Engineering and
+                    Cloud Architecture. Whether you have a question, want to collaborate, or just want to connect — feel
+                    free to reach out!</p>
+
+                <div class="contact-layout">
+                    <!-- Contact Info Card -->
+                    <div class="contact-info-card fade-up">
+                        <h3>Contact Details</h3>
+                        <ul class="contact-info-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                    fill="none">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                                <span>Anand Prakash</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                    fill="none">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.07 3.38 2 2 0 0 1 3.07 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z" />
+                                </svg>
+                                <a href="tel:+919880971204">+91 9880971204</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                    fill="none">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                <a href="mailto:apra451@gmail.com">apra451@gmail.com</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                    fill="none">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                                <a href="https://www.linkedin.com/in/anand-prakash-16803b5a/" target="_blank"
+                                    rel="noopener noreferrer">linkedin.com/in/anand-prakash</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2"
+                                    fill="none">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                <a href="https://github.com/freakgeek0912" target="_blank"
+                                    rel="noopener noreferrer">github.com/freakgeek0912</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrap fade-up">
+                        <div aria-live="polite" id="form-msg"></div>
+                        <form action="https://formspree.io/f/mvzwvzgw" method="POST" class="contact-form">
+                            <input type="hidden" name="_replyto" value="apra451@gmail.com">
+                            <input type="hidden" name="_subject" value="New contact from your portfolio site!">
+                            <div class="form-group">
+                                <label for="contact-name">Your Name *</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required
+                                    placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number</label>
+                                <input type="tel" id="contact-phone" name="phone" placeholder="+91 98765 43210">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-purpose">Purpose *</label>
+                                <select id="contact-purpose" name="purpose" required>
+                                    <option value="" disabled selected>Select purpose...</option>
+                                    <option value="Job Opportunity">Job Opportunity</option>
+                                    <option value="Consulting">Consulting / Project</option>
+                                    <option value="Collaboration">Collaboration</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message *</label>
+                                <textarea id="contact-message" name="message" rows="4" required
+                                    placeholder="Tell me more about your inquiry..."></textarea>
+                            </div>
+                            <div class="form-group callback-check">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="callback_requested" value="Yes, please call me back">
+                                    <span>📞 Want a callback? (I'll call you back on the number above)</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary"
+                                style="width: 100%; border-radius: 0.75rem;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 Anand Prakash · Data Engineering Leader</p>
+            <div class="social-links">
+                <a href="https://github.com/freakgeek0912" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/anand-prakash-16803b5a/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
             </div>
         </div>
-    </div>
-</section>
+    </footer>
 
-<!-- Wave separator -->
-<div class="wave-sep">
-    <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,35 C360,70 1080,0 1440,35 L1440,70 L0,70 Z" fill="var(--bg-secondary)"/>
-    </svg>
-</div>
+    <!-- Theme + Scroll-Animation Script -->
+    <script>
+        (function () {
+            // Theme Toggle
+            var btn = document.getElementById('theme-toggle');
+            if (btn) {
+                btn.addEventListener('click', function () {
+                    var isDark = document.documentElement.classList.toggle('dark');
+                    document.documentElement.classList.toggle('light', !isDark);
+                    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                });
+            }
 
-<!-- ===== ABOUT ===== -->
-<section class="section bg-alt" id="about">
-    <div class="container">
-        <h2 class="section-title fade-up">About Me</h2>
-        <div class="about-grid">
-            <div class="fade-up">
-                <p class="bio">Strategic Data Engineering Leader &amp; Cloud/AI Solution Architect with around <strong>12 years of experience</strong> driving enterprise data modernization, enabling AI adoption, and establishing robust data governance frameworks to ensure accuracy, quality, and business value. Expertise in building scalable and fault-tolerant applications on MS Azure and Google Cloud Platforms. Proven ability to manage development and delivery of end-user products, and lead teams of talented professionals to meet business objectives.</p>
-            </div>
-            <div class="about-meta fade-up">
-                <div class="about-meta-item">
-                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    <span>Pune, MH — India</span>
-                </div>
-                <div class="about-meta-item">
-                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                    <span><strong>B.Tech</strong> — Information &amp; Technology, IIMT (2014)</span>
-                </div>
-                <div class="about-meta-item">
-                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    <span><strong>BFSI | Healthcare | Telecomm | Retail</strong></span>
-                </div>
-                <div class="cert-badges">
-                    <span class="cert-badge">Google Cloud Architect</span>
-                    <span class="cert-badge">Azure Solution Architect</span>
-                </div>
-                <a href="assets/Anand_Prakash_Resume.pdf" class="btn btn-outline" download style="margin-top: 0.5rem; border-radius: 0.75rem;">⬇ Download Resume</a>
-            </div>
-        </div>
-    </div>
-</section>
+            // Scroll Animation (IntersectionObserver)
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
 
-<!-- Wave separator (reversed) -->
-<div class="wave-sep">
-    <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,35 C360,0 1080,70 1440,35 L1440,0 L0,0 Z" fill="var(--bg-secondary)"/>
-    </svg>
-</div>
-
-<!-- ===== EXPERIENCE ===== -->
-<section class="section" id="experience">
-    <div class="container">
-        <h2 class="section-title fade-up">Experience &amp; Work</h2>
-        <div class="experience-list">
-
-            <article class="exp-card fade-up">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">Manager Data Engineering &amp; Lead Cloud Architect</div>
-                        <div class="exp-company">Publicis Sapient</div>
-                    </div>
-                    <span class="exp-period">Sep 2023 – Present</span>
-                </div>
-                <ul class="exp-bullets">
-                    <li>Designed and delivered AI-powered Martech applications for a Fortune 5 healthcare client, enabling personalized patient engagement campaigns.</li>
-                    <li>Built a marketing data platform integrating batch and real-time sources, delivering 400+ targeted campaigns to customer journey platforms.</li>
-                    <li>Developed AI-driven recommendation engines for healthcare marketing, improving campaign accuracy and patient outreach.</li>
-                    <li>Championed cloud migration initiatives, optimizing resource utilization and reducing infrastructure costs.</li>
-                    <li>Provided technical leadership in architecture reviews, ensuring scalability, governance, and compliance with healthcare data standards.</li>
-                </ul>
-                <div class="tech-tags">
-                    <span class="tag">Azure Databricks</span>
-                    <span class="tag">DBX Agentbricks</span>
-                    <span class="tag">GenAI</span>
-                    <span class="tag">GCP</span>
-                    <span class="tag">PySpark</span>
-                </div>
-            </article>
-
-            <article class="exp-card fade-up">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">Manager Data Engineering</div>
-                        <div class="exp-company">Accenture Strategy &amp; Consulting</div>
-                    </div>
-                    <span class="exp-period">Jun 2019 – Sep 2023</span>
-                </div>
-                <ul class="exp-bullets">
-                    <li>Part of Applied Intelligence team — managed E2E tech products using Big Data toolstack, Azure, and GCP.</li>
-                    <li>Delivered multiple data engineering &amp; analytics projects across data modernization, cloud migration, and scalable solution design.</li>
-                    <li>Led offshore teams, managed stakeholder communications and agile SDLC activities across multiple clients.</li>
-                    <li>Experienced with high-scale data transformation preserving data quality, governance, and security throughout.</li>
-                </ul>
-                <div class="tech-tags">
-                    <span class="tag">Big Data</span>
-                    <span class="tag">Azure ADF</span>
-                    <span class="tag">GCP Pub/Sub</span>
-                    <span class="tag">Kafka</span>
-                    <span class="tag">Agile</span>
-                </div>
-            </article>
-
-            <article class="exp-card fade-up">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">Manager Data Engineering &amp; Lead Architect</div>
-                        <div class="exp-company">Zebra Technologies</div>
-                    </div>
-                    <span class="exp-period">Jul 2018 – May 2019</span>
-                </div>
-                <ul class="exp-bullets">
-                    <li>Designed ETL workflow for data migration from AWS S3 to On-Prem Cassandra post transformation.</li>
-                    <li>Developed Kafka Stream jobs for near real-time data ingestion and processing.</li>
-                    <li>Built Spark applications for data transformation and reporting needs based on stakeholder requirements.</li>
-                    <li>Delivered cloud migration of data pipelines from OnPrem to GCP.</li>
-                </ul>
-                <div class="tech-tags">
-                    <span class="tag">Kafka</span>
-                    <span class="tag">PySpark</span>
-                    <span class="tag">Cassandra</span>
-                    <span class="tag">AWS S3</span>
-                    <span class="tag">GCP</span>
-                </div>
-            </article>
-
-            <article class="exp-card fade-up">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">Senior Software Engineer / Lead Consultant</div>
-                        <div class="exp-company">Cerner Healthcare (Oracle) &amp; ITC Infotech</div>
-                    </div>
-                    <span class="exp-period">Jan 2017 – Jun 2018</span>
-                </div>
-                <ul class="exp-bullets">
-                    <li>Migrated 6+ PB of healthcare data from on-prem systems to Azure and delivered Tableau reporting.</li>
-                    <li>Optimized Spark Scala code with industry standard practices; created data models and control flow diagrams.</li>
-                    <li>Provided monitoring solutions for Global Banking clients to ease support operations.</li>
-                </ul>
-                <div class="tech-tags">
-                    <span class="tag">Azure</span>
-                    <span class="tag">Tableau</span>
-                    <span class="tag">Spark Scala</span>
-                    <span class="tag">HDFS</span>
-                </div>
-            </article>
-
-            <article class="exp-card fade-up">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">Hadoop Data Engineer</div>
-                        <div class="exp-company">Birlasoft India Pvt Ltd</div>
-                    </div>
-                    <span class="exp-period">Jun 2014 – Jan 2017</span>
-                </div>
-                <ul class="exp-bullets">
-                    <li>Migrated large volumes of relational data from SAP tables to HDFS, ensuring data integrity throughout the migration lifecycle.</li>
-                    <li>Created optimized Hive tables for storing imported data, implementing partitioning strategies to improve query performance and reduce scan costs.</li>
-                    <li>Developed Hive scripts to fetch data from a central repository using Sqoop, and wrote Shell scripts to fully automate the ingestion pipeline.</li>
-                    <li>Worked across BFSI and Retail domains, contributing to batch data workflows that fed downstream analytics and reporting systems.</li>
-                </ul>
-                <div class="tech-tags">
-                    <span class="tag">HDFS</span>
-                    <span class="tag">Hive</span>
-                    <span class="tag">Sqoop</span>
-                    <span class="tag">SAP</span>
-                    <span class="tag">Shell Scripting</span>
-                </div>
-            </article>
-
-        </div>
-    </div>
-</section>
-
-<!-- Wave separator -->
-<div class="wave-sep">
-    <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,35 C360,70 1080,0 1440,35 L1440,70 L0,70 Z" fill="var(--bg-secondary)"/>
-    </svg>
-</div>
-
-<!-- ===== SKILLS ===== -->
-<section class="section bg-alt" id="skills">
-    <div class="container">
-        <h2 class="section-title fade-up">Skills &amp; Technologies</h2>
-        <div class="skills-grid">
-            <div class="skill-category fade-up">
-                <h3>☁️ Cloud Platforms</h3>
-                <div class="skill-pills">
-                    <span class="skill-pill">Azure Databricks</span>
-                    <span class="skill-pill">Azure Data Factory</span>
-                    <span class="skill-pill">Azure SQL</span>
-                    <span class="skill-pill">Azure Key Vault</span>
-                    <span class="skill-pill">DBX Unity Catalog</span>
-                    <span class="skill-pill">GC DataProc</span>
-                    <span class="skill-pill">GC Pub/Sub</span>
-                    <span class="skill-pill">GC Composer</span>
-                    <span class="skill-pill">GC Spanner</span>
-                </div>
-            </div>
-            <div class="skill-category fade-up">
-                <h3>📦 Big Data Stack</h3>
-                <div class="skill-pills">
-                    <span class="skill-pill">Apache Kafka</span>
-                    <span class="skill-pill">HDFS</span>
-                    <span class="skill-pill">Hive</span>
-                    <span class="skill-pill">Cassandra</span>
-                    <span class="skill-pill">PySpark</span>
-                    <span class="skill-pill">Scala</span>
-                    <span class="skill-pill">Sqoop</span>
-                </div>
-            </div>
-            <div class="skill-category fade-up">
-                <h3>🤖 AI &amp; GenAI</h3>
-                <div class="skill-pills">
-                    <span class="skill-pill">M365 Copilot</span>
-                    <span class="skill-pill">ChatGPT</span>
-                    <span class="skill-pill">Gemini</span>
-                    <span class="skill-pill">Prompt Engineering</span>
-                    <span class="skill-pill">AI Frameworks</span>
-                    <span class="skill-pill">Martech AI</span>
-                </div>
-            </div>
-            <div class="skill-category fade-up">
-                <h3>🔧 DevOps &amp; CI/CD</h3>
-                <div class="skill-pills">
-                    <span class="skill-pill">GitHub Actions</span>
-                    <span class="skill-pill">Jenkins</span>
-                    <span class="skill-pill">Azure DevOps</span>
-                    <span class="skill-pill">GitLab</span>
-                    <span class="skill-pill">Bitbucket</span>
-                </div>
-            </div>
-            <div class="skill-category fade-up">
-                <h3>📊 Visualization</h3>
-                <div class="skill-pills">
-                    <span class="skill-pill">Tableau</span>
-                    <span class="skill-pill">Power BI</span>
-                </div>
-            </div>
-            <div class="skill-category fade-up">
-                <h3>🏗️ Domain &amp; Architecture</h3>
-                <div class="skill-pills">
-                    <span class="skill-pill">Data Modernization</span>
-                    <span class="skill-pill">Data Governance</span>
-                    <span class="skill-pill">Cloud Migration</span>
-                    <span class="skill-pill">ETL Design</span>
-                    <span class="skill-pill">Solution Architecture</span>
-                    <span class="skill-pill">Pre-Sales / RFP</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Wave separator (reversed) -->
-<div class="wave-sep">
-    <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,35 C360,0 1080,70 1440,35 L1440,0 L0,0 Z" fill="var(--bg-secondary)"/>
-    </svg>
-</div>
-
-<!-- ===== CONTACT ===== -->
-<section class="section" id="contact">
-    <div class="container">
-        <h2 class="section-title text-center fade-up" style="display:block; text-align:center;">Get In Touch</h2>
-        <p class="contact-intro fade-up">I'm currently looking for new opportunities in Data Engineering and Cloud Architecture. Whether you have a question, want to collaborate, or just want to connect — feel free to reach out!</p>
-
-        <div class="contact-layout">
-            <!-- Contact Info Card -->
-            <div class="contact-info-card fade-up">
-                <h3>Contact Details</h3>
-                <ul class="contact-info-list">
-                    <li>
-                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                        <span>Anand Prakash</span>
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.07 3.38 2 2 0 0 1 3.07 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
-                        <a href="tel:+919880971204">+91 9880971204</a>
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        <a href="mailto:apra451@gmail.com">apra451@gmail.com</a>
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                        <a href="https://www.linkedin.com/in/anand-prakash-16803b5a/" target="_blank" rel="noopener noreferrer">linkedin.com/in/anand-prakash</a>
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                        <a href="https://github.com/freakgeek0912" target="_blank" rel="noopener noreferrer">github.com/freakgeek0912</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form-wrap fade-up">
-                <div aria-live="polite" id="form-msg"></div>
-                <form action="https://formspree.io/f/mvzwvzgw" method="POST" class="contact-form">
-                    <input type="hidden" name="_replyto" value="apra451@gmail.com">
-                    <input type="hidden" name="_subject" value="New contact from your portfolio site!">
-                    <div class="form-group">
-                        <label for="contact-name">Your Name *</label>
-                        <input type="text" id="contact-name" name="name" required placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-email">Email Address *</label>
-                        <input type="email" id="contact-email" name="email" required placeholder="john@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-phone">Phone Number</label>
-                        <input type="tel" id="contact-phone" name="phone" placeholder="+91 98765 43210">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-purpose">Purpose *</label>
-                        <select id="contact-purpose" name="purpose" required>
-                            <option value="" disabled selected>Select purpose...</option>
-                            <option value="Job Opportunity">Job Opportunity</option>
-                            <option value="Consulting">Consulting / Project</option>
-                            <option value="Collaboration">Collaboration</option>
-                            <option value="General Inquiry">General Inquiry</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-message">Message *</label>
-                        <textarea id="contact-message" name="message" rows="4" required placeholder="Tell me more about your inquiry..."></textarea>
-                    </div>
-                    <div class="form-group callback-check">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="callback_requested" value="Yes, please call me back">
-                            <span>📞 Want a callback? (I'll call you back on the number above)</span>
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 0.75rem;">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-</main>
-
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-    <div class="container footer-content">
-        <p>&copy; 2024 Anand Prakash · Data Engineering Leader</p>
-        <div class="social-links">
-            <a href="https://github.com/freakgeek0912" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/anand-prakash-16803b5a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-        </div>
-    </div>
-</footer>
-
-<!-- Theme + Scroll-Animation Script -->
-<script>
-(function(){
-  // Theme Toggle
-  var btn = document.getElementById('theme-toggle');
-  if(btn){
-    btn.addEventListener('click', function(){
-      var isDark = document.documentElement.classList.toggle('dark');
-      document.documentElement.classList.toggle('light', !isDark);
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  }
-
-  // Scroll Animation (IntersectionObserver)
-  var observer = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-
-  document.querySelectorAll('.fade-up').forEach(function(el){ observer.observe(el); });
-})();
-</script>
+            document.querySelectorAll('.fade-up').forEach(function (el) { observer.observe(el); });
+        })();
+    </script>
 
 </body>
+
 </html>
